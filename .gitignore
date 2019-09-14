@@ -1,0 +1,11 @@
+# Byte-compiled
+__pycache__/
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+
+# editor files
+.vscode/
