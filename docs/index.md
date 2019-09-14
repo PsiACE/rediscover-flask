@@ -22,4 +22,5 @@ Project Link: [https://github.com/psiace/rediscover-flask](https://github.com/ps
 
 ## Acknowledgements
 
-- Michael Herman - [@mjhea0](https://github.com/mjhea0) - An excellent developer and technical author. His creation of [DiscoverFlask](https://github.com/realpython/discover-flask) is the foundation of this book.
+-   Michael Herman - [@mjhea0](https://github.com/mjhea0) - An excellent developer and technical author. His creation of [DiscoverFlask](https://github.com/realpython/discover-flask) is the foundation of this book.
+-   Rediscover Flask Logo based on the [Hunting Horn Icon](https://game-icons.net/1x1/lorc/hunting-horn.html) made by [Lorc](http://lorcblog.blogspot.com). The original icon is available on [https://game-icons.net](https://game-icons.net).
