@@ -86,5 +86,5 @@ Project Link: [https://github.com/psiace/rediscover-flask][project-url]
 [thanks-shield]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat-square
 [thanks-url]: https://saythanks.io/to/PsiACE
 [paypal-shield]: https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square
-[paypal-url]: https://paypal.me/psiace
+[paypal-url]: https://www.paypal.me/psiace
 [project-url]: https://github.com/psiace/rediscover-flask
