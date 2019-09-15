@@ -43,8 +43,8 @@ If you have an understanding of Python and web-related development techniques (H
 
 If you are interested in this tutorial and do gain something from it, consider supporting me in the following ways:
 
--   Star this repo.
--   Help solve related issues.
+-   Star [this repo][project-url].
+-   Help solve related [issues][issues-url].
 -   Recommend it in the community or help translate it.
 -   Submit a note of thankfulness. [![Say Thanks][thanks-shield]][thanks-url]
 -   Buy me a cup of coffee. [![Paypal][paypal-shield]][paypal-url]
@@ -61,7 +61,7 @@ The content of this book itself is licensed under the [Creative Commons Attribut
 
 Chojan Shang - [@PsiACE](https://github.com/psiace) - <psiace@outlook.com>
 
-Project Link: [https://github.com/psiace/rediscover-flask](https://github.com/psiace/rediscover-flask)
+Project Link: [https://github.com/psiace/rediscover-flask][project-url]
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -87,3 +87,4 @@ Project Link: [https://github.com/psiace/rediscover-flask](https://github.com/ps
 [thanks-url]: https://saythanks.io/to/PsiACE
 [paypal-shield]: https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square
 [paypal-url]: https://paypal.me/psiace
+[project-url]: https://github.com/psiace/rediscover-flask
