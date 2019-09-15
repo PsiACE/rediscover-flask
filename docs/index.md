@@ -20,7 +20,7 @@ If you are interested in this tutorial and do gain something from it, consider s
 
 ## License
 
-Distributed under the `MIT` License. See [LICENSE](https://github.com/psiace/rediscover-flask/blob/master/LICENSE) for more information.
+The content of this book itself is licensed under the [Creative Commons Attribution NonCommercial ShareAlike 4.0 International license](https://github.com/psiace/rediscover-flask/blob/master/LICENSE-CC-BY-NC-SA), and the underlying source code used to interpret and display the contents of this book is licensed under the [MIT license](https://github.com/psiace/rediscover-flask/blob/master/LICENSE-MIT).
 
 <!-- CONTACT -->
 

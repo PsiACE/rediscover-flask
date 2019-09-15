@@ -4,7 +4,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![GitHub last commit][commit-shield]][commit-url]
 
 <!-- PROJECT LOGO -->
@@ -52,7 +51,7 @@ If you are interested in this tutorial and do gain something from it, consider s
 
 ## License
 
-Distributed under the `MIT` License. See [LICENSE][license-url] for more information.
+The content of this book itself is licensed under the [Creative Commons Attribution NonCommercial ShareAlike 4.0 International license](https://github.com/psiace/rediscover-flask/blob/master/LICENSE-CC-BY-NC-SA), and the underlying source code used to interpret and display the contents of this book is licensed under the [MIT license](https://github.com/psiace/rediscover-flask/blob/master/LICENSE-MIT).
 
 <!-- CONTACT -->
 
@@ -80,8 +79,6 @@ Project Link: [https://github.com/psiace/rediscover-flask](https://github.com/ps
 [forks-url]: https://github.com/PsiACE/rediscover-flask/network
 [issues-shield]: https://img.shields.io/github/issues-raw/psiace/rediscover-flask?style=flat-square
 [issues-url]: https://github.com/PsiACE/rediscover-flask/issues
-[license-shield]: https://img.shields.io/github/license/psiace/rediscover-flask?style=flat-square
-[license-url]: https://github.com/psiace/rediscover-flask/blob/master/LICENSE
 [commit-shield]: https://img.shields.io/github/last-commit/psiace/rediscover-flask?style=flat-square
 [commit-url]: https://github.com/PsiACE/rediscover-flask/commits
 [thanks-shield]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat-square
