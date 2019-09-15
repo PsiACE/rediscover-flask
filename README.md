@@ -23,7 +23,7 @@
     <br />
     <a href="https://github.com/psiace/rediscover-flask/projects">View Progress</a>
     ·
-    <a href="https://github.com/psiace/rediscover-flask/blob/master/src">Source Code</a>
+    <a href="https://github.com/PsiACE/rediscover-flask/tree/master/src">Source Code</a>
     ·
     <a href="https://github.com/psiace/rediscover-flask/issues">Report Bug</a>
   </p>
