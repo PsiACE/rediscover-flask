@@ -5,6 +5,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![GitHub last commit][commit-shield]][commit-url]
 
 <!-- PROJECT LOGO -->
 
@@ -15,7 +16,6 @@
   </a>
 
   <h3 align="center">Rediscover Flask</h3>
-
   <p align="center">
     Full Stack Web Development with Flask.
     <br />
@@ -35,6 +35,18 @@
 The goal of this book is to help readers learn about **[Flask](https://palletsprojects.com/p/flask/)** development and master the basic **[Full Stack](https://www.webopedia.com/TERM/F/full-stack.html)** skills. In other words, you can learn how to build, deploy, and operate Flask applications.
 
 If you have an understanding of Python and web-related development techniques (HTML, CSS and Javascript...), then it would be great. If not, don't worry, we'll provide some guidance to help you. All you need to do is keep the motivation for learning.
+
+<!-- Support -->
+
+## Support
+
+If you are interested in this tutorial and do gain something from it, consider supporting me in the following ways:
+
+-   Star this repo.
+-   Help solve related issues.
+-   Recommend it in the community or help translate it.
+-   Submit a note of thankfulness. [![Say Thanks][thanks-shield]][thanks-url]
+-   Buy me a cup of coffee. [![Paypal][paypal-shield]][paypal-url]
 
 <!-- LICENSE -->
 
@@ -70,3 +82,9 @@ Project Link: [https://github.com/psiace/rediscover-flask](https://github.com/ps
 [issues-url]: https://github.com/PsiACE/rediscover-flask/issues
 [license-shield]: https://img.shields.io/github/license/psiace/rediscover-flask?style=flat-square
 [license-url]: https://github.com/psiace/rediscover-flask/blob/master/LICENSE
+[commit-shield]: https://img.shields.io/github/last-commit/psiace/rediscover-flask?style=flat-square
+[commit-url]: https://github.com/PsiACE/rediscover-flask/commits
+[thanks-shield]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat-square
+[thanks-url]: https://saythanks.io/to/PsiACE
+[paypal-shield]: https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square
+[paypal-url]: https://paypal.me/psiace
