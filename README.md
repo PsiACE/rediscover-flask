@@ -31,6 +31,8 @@
 
 <!-- ABOUT THE PROJECT -->
 
+> :construction: Work In Progress. :construction: You can watch this repo so that you can receive updates in time.
+
 The goal of this book is to help readers learn about **[Flask](https://palletsprojects.com/p/flask/)** development and master the basic **[Full Stack](https://www.webopedia.com/TERM/F/full-stack.html)** skills. In other words, you can learn how to build, deploy, and operate Flask applications.
 
 If you have an understanding of Python and web-related development techniques (HTML, CSS and Javascript...), then it would be great. If not, don't worry, we'll provide some guidance to help you. All you need to do is keep the motivation for learning.
