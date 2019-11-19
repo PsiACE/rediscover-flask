@@ -1,0 +1,41 @@
+name: Deploy Book
+
+on:
+    push:
+        branches:
+            - master
+    pull_request:
+
+jobs:
+    release:
+        name: "GitHub Pages"
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "Checkout Repository"
+              uses: actions/checkout@v1
+
+            - name: Install Rustup
+              run: |
+                  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+                  echo ::add-path::$HOME/.cargo/bin
+              if: runner.os == 'macOS'
+
+            - name: "Print Rust Version"
+              run: |
+                  rustc -Vv
+                  cargo -Vv
+
+            - name: "Install mdBook"
+              run: cargo install mdbook mdbook-linkcheck
+
+            - name: "Build Book"
+              run: mdbook build
+
+            - name: "Deploy Book"
+              uses: JamesIves/github-pages-deploy-action@master
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  BASE_BRANCH: master
+                  BRANCH: gh-pages
+                  FOLDER: docs/book
