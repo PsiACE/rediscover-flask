@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/psiace/rediscover-flask">
-    <img src="docs/assets/logo/rediscover-flask-logo.png" alt="Rediscover Flask Logo" width="128" height="128">
+    <img src="docs/src/assets/logo/rediscover-flask-logo.png" alt="Rediscover Flask Logo" width="128" height="128">
   </a>
 
   <h3 align="center">Rediscover Flask</h3>
