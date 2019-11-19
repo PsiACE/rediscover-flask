@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Rediscover Flask</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded affix "><a href="index.html">Rediscover Flask</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Rediscover Flask</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- PROJECT SHIELDS -->
+<p><a href="https://github.com/psiace/rediscover-flask/watchers"><img src="https://img.shields.io/github/watchers/psiace/rediscover-flask?style=flat-square" alt="Watchers" /></a>
+<a href="https://github.com/psiace/rediscover-flask/stargazers"><img src="https://img.shields.io/github/stars/psiace/rediscover-flask?style=flat-square" alt="Stargazers" /></a>
+<a href="https://github.com/PsiACE/rediscover-flask/network"><img src="https://img.shields.io/github/forks/PsiACE/rediscover-flask?style=flat-square" alt="Forks" /></a>
+<a href="https://github.com/PsiACE/rediscover-flask/issues"><img src="https://img.shields.io/github/issues-raw/psiace/rediscover-flask?style=flat-square" alt="Issues" /></a>
+<a href="https://github.com/PsiACE/rediscover-flask/commits"><img src="https://img.shields.io/github/last-commit/psiace/rediscover-flask?style=flat-square" alt="GitHub last commit" /></a></p>
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/psiace/rediscover-flask">
+    <img src="assets/logo/rediscover-flask-logo.png" alt="Rediscover Flask Logo" width="128" height="128">
+  </a>
+<h3 align="center">Rediscover Flask</h3>
+  <p align="center">
+    Full Stack Web Development with Flask.
+    <br />
+    <a href="https://psiace.github.io/rediscover-flask"><strong>Read the Book » </strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/psiace/rediscover-flask/projects">View Progress</a>
+    ·
+    <a href="https://github.com/PsiACE/rediscover-flask/tree/master/src">Source Code</a>
+    ·
+    <a href="https://github.com/psiace/rediscover-flask/issues">Report Bug</a>
+  </p>
+</p>
+<!-- ABOUT THE PROJECT -->
+<blockquote>
+<p>:construction: Work In Progress. :construction: You can watch <a href="https://github.com/psiace/rediscover-flask">this repo</a> so that you can receive updates in time.</p>
+</blockquote>
+<p>The goal of this book is to help readers learn about <strong><a href="https://palletsprojects.com/p/flask/">Flask</a></strong> development and master the basic <strong><a href="https://www.webopedia.com/TERM/F/full-stack.html">Full Stack</a></strong> skills. In other words, you can learn how to build, deploy, and operate Flask applications.</p>
+<p>If you have an understanding of Python and web-related development techniques (HTML, CSS and Javascript...), then it would be great. If not, don't worry, we'll provide some guidance to help you. All you need to do is keep the motivation for learning.</p>
+<!-- Support -->
+<h2><a class="header" href="#support" id="support">Support</a></h2>
+<p>If you are interested in this tutorial and do gain something from it, consider supporting me in the following ways:</p>
+<ul>
+<li>Star <a href="https://github.com/psiace/rediscover-flask">this repo</a>.</li>
+<li>Help solve related <a href="https://github.com/PsiACE/rediscover-flask/issues">issues</a>.</li>
+<li>Recommend it in the community or help translate it.</li>
+<li>Submit a note of thankfulness. <a href="https://saythanks.io/to/PsiACE"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat-square" alt="Say Thanks" /></a></li>
+<li>Buy me a cup of coffee. <a href="https://www.paypal.me/psiace"><img src="https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square" alt="Paypal" /></a></li>
+</ul>
+<!-- LICENSE -->
+<h2><a class="header" href="#license" id="license">License</a></h2>
+<p>The content of this book itself is licensed under the <a href="https://github.com/psiace/rediscover-flask/blob/master/LICENSE-CC-BY-NC-SA">Creative Commons Attribution NonCommercial ShareAlike 4.0 International license</a>, and the underlying source code used to interpret and display the contents of this book is licensed under the <a href="https://github.com/psiace/rediscover-flask/blob/master/LICENSE-MIT">MIT license</a>.</p>
+<!-- CONTACT -->
+<h2><a class="header" href="#contact" id="contact">Contact</a></h2>
+<p>Chojan Shang - <a href="https://github.com/psiace">@PsiACE</a> - <a href="mailto:psiace@outlook.com">psiace@outlook.com</a></p>
+<p>Project Link: <a href="https://github.com/psiace/rediscover-flask">https://github.com/psiace/rediscover-flask</a></p>
+<!-- ACKNOWLEDGEMENTS -->
+<h2><a class="header" href="#acknowledgements" id="acknowledgements">Acknowledgements</a></h2>
+<ul>
+<li>Michael Herman - <a href="https://github.com/mjhea0">@mjhea0</a> - An excellent developer and technical author. His creation of <a href="https://github.com/realpython/discover-flask">DiscoverFlask</a> is the foundation of this book.</li>
+<li>Rediscover Flask Logo based on the <a href="https://game-icons.net/1x1/lorc/hunting-horn.html">Hunting Horn Icon</a> made by <a href="http://lorcblog.blogspot.com">Lorc</a>. The original icon is available on <a href="https://game-icons.net">https://game-icons.net</a>.</li>
+</ul>
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
